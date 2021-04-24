@@ -1,0 +1,139 @@
+/*Generals*/
+:root {
+  font-size: 1.3rem;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "kumbh Sans", sans-serif;
+  color: rgb(34, 27, 27);
+}
+
+h1 {
+}
+
+/*card*/
+
+.main {
+  background-color: hsl(185, 75%, 39%);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
+}
+
+.full-card {
+  width: 22rem;
+  border-radius: 1rem;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  background-color: rgb(255, 255, 255);
+}
+.card-body {
+  padding: 1.3rem 1.3rem;
+}
+.card-header {
+  background-image: url(../images/bg-pattern-card.svg);
+  background-size: cover;
+  height: 9rem;
+  border-radius: 1rem 1rem 0 0;
+}
+.image-holder {
+  width: 7rem;
+  height: 7rem;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 0.5rem solid #ffffff;
+  margin: -3rem auto 1.3rem auto;
+}
+
+.card-body-image {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.age,
+.city,
+.meta {
+  font-weight: 400;
+  color: rgba(44, 37, 37, 0.5);
+}
+.name-age {
+  font-size: 1.3rem;
+  margin-bottom: 0.5rem;
+}
+.age {
+  font-weight: 400;
+  margin-left: 0.3rem;
+}
+.city {
+  font-size: 0.9rem;
+}
+
+.card-footer {
+  border-top: 0.1rem solid rgba(44, 37, 37, 0.3);
+  display: flex;
+  padding: 0 1rem;
+}
+.card-footer .item {
+  flex: 1;
+  height: 6rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.card-footer .item .value {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+.card-footer .item .meta {
+  font-size: 0.7rem;
+  letter-spacing: 0.05rem;
+}
+/*Graphics (Background Circles) */
+.circles .top,
+.bottom {
+  position: absolute;
+  animation: 2s circles forwards;
+}
+
+.top {
+  top: -30rem;
+  left: -20rem;
+
+  transform: translate(-6rem, -3rem);
+}
+.bottom {
+  bottom: -30rem;
+  right: -20rem;
+  transform: translate(6rem, 3rem);
+}
+@keyframes circles {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+.attribution {
+    position: absolute;
+    bottom: 0.5rem;
+    font-size: 0.6rem;
+    text-align: center;
+  }
+  .attribution a {
+    text-decoration: none;
+    color: hsl(228, 45%, 44%);
+  }
+ 
